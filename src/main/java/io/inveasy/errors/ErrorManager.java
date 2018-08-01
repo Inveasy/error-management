@@ -16,8 +16,18 @@
 
 package io.inveasy.errors;
 
+/**
+ * This class manages error codes
+ */
 public class ErrorManager
 {
+	private ErrorManager() { /* This class should only be used statically */ }
+	
+	/**
+	 * Creates a new error code.
+	 * @param suffix The suffix of the generated code.
+	 * @return A new hexadecimal error code composed of project, class, method (optional), and suffix parts.
+	 */
 	@ErrorManagerAnnotation
 	public static String code(String suffix)
 	{

@@ -27,6 +27,9 @@ import org.aspectj.lang.annotation.Before;
 
 import java.lang.annotation.Annotation;
 
+/**
+ * This aspect class do the actual code generation.
+ */
 @Aspect
 public class ErrorManagerAspect
 {
